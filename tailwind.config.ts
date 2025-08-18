@@ -61,7 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Yarn theme colors
+				'warm-cream': 'hsl(var(--warm-cream))',
+				'soft-peach': 'hsl(var(--soft-peach))',
+				'mint-fresh': 'hsl(var(--mint-fresh))',
+				'cozy-brown': 'hsl(var(--cozy-brown))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
