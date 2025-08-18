@@ -5,6 +5,7 @@ import ProductCategories from "@/components/ProductCategories";
 import YarnRecommendSection from "@/components/YarnRecommendSection";
 import BrandLogos from "@/components/BrandLogos";
 import KnittingTutorialSection from "@/components/KnittingTutorialSection";
+import YarnStitchDivider from "@/components/YarnStitchDivider";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,10 +14,15 @@ const Index = () => {
       <Header />
       <main>
         <HeroBanner />
+        <YarnStitchDivider />
         <InspirationSection />
+        <YarnStitchDivider />
         <ProductCategories />
+        <YarnStitchDivider />
         <YarnRecommendSection />
+        <YarnStitchDivider />
         <BrandLogos />
+        <YarnStitchDivider />
         <KnittingTutorialSection />
       </main>
       <Footer />

@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroYarn from "@/assets/hero-yarn.jpg";
+import FloatingYarnBalls from "./FloatingYarnBalls";
 
 const HeroBanner = () => {
   return (
-    <section className="relative bg-gradient-to-br from-background to-warm-cream py-16 md:py-24">
+    <section className="relative bg-gradient-to-br from-background to-warm-cream py-16 md:py-24 overflow-hidden">
+      <FloatingYarnBalls />
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
@@ -22,7 +24,9 @@ const HeroBanner = () => {
               เลือกซื้อสินค้า
             </Button>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 relative">
+            {/* Rolling yarn ball */}
+            <div className="absolute -top-8 -left-8 w-16 h-16 rounded-full bg-gradient-to-br from-secondary to-mint-fresh animate-yarn-roll opacity-60"></div>
             <img 
               src={heroYarn} 
               alt="ไหมพรมสีสวยหลากหลายพร้อมอุปกรณ์ถัก" 

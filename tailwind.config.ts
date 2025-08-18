@@ -89,11 +89,45 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// Yarn-themed animations
+				'yarn-float': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(180deg)' }
+				},
+				'yarn-roll': {
+					'0%': { transform: 'translateX(-100px) rotate(0deg)' },
+					'100%': { transform: 'translateX(100px) rotate(360deg)' }
+				},
+				'stitch-draw': {
+					'0%': { width: '0%', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { width: '100%', opacity: '1' }
+				},
+				'needle-knit': {
+					'0%, 100%': { transform: 'rotate(-10deg) translateY(0px)' },
+					'50%': { transform: 'rotate(10deg) translateY(-5px)' }
+				},
+				'yarn-wave': {
+					'0%, 100%': { transform: 'scaleY(1) translateX(0)' },
+					'25%': { transform: 'scaleY(1.1) translateX(-2px)' },
+					'75%': { transform: 'scaleY(0.9) translateX(2px)' }
+				},
+				'float-gentle': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				// Yarn animations
+				'yarn-float': 'yarn-float 6s ease-in-out infinite',
+				'yarn-roll': 'yarn-roll 8s linear infinite',
+				'stitch-draw': 'stitch-draw 2s ease-out forwards',
+				'needle-knit': 'needle-knit 1.5s ease-in-out infinite',
+				'yarn-wave': 'yarn-wave 4s ease-in-out infinite',
+				'float-gentle': 'float-gentle 3s ease-in-out infinite'
 			}
 		}
 	},
